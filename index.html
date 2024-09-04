@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversorio</title>
+    <link rel="icon" href="img/icon/piggy-bank.png" type="img/icon/cash-flow.png">
+    <link rel="stylesheet" href="frontend/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div id="animated-background"></div>
+    <div class="main-container">
+        <div class="converter-container">
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch" checked>
+                <label for="theme-switch" class="toggle-label"></label>
+            </div>
+            <h1 class="title">Conversor de Monedas</h1>
+            <div class="converter">
+                <div class="currency-input">
+                    <label for="from_currency">De</label>
+                    <div class="select-wrapper">
+                        <select id="from_currency">
+                            <option value="USD" data-flag="us" selected>Dólar Estadounidense (USD)</option>
+                            <option value="EUR" data-flag="eu">Euro (EUR)</option>
+                            <option value="GBP" data-flag="gb">Libra Esterlina (GBP)</option>
+                            <option value="CNY" data-flag="cn">Yuan Chino (CNY)</option>
+                            <option value="JPY" data-flag="jp">Yen Japonés (JPY)</option>
+                            <option value="CAD" data-flag="ca">Dólar Canadiense (CAD)</option>
+                            <option value="AUD" data-flag="au">Dólar Australiano (AUD)</option>
+                            <option value="NZD" data-flag="nz">Dólar Neozelandés (NZD)</option>
+                            <option value="BRL" data-flag="br">Real Brasileño (BRL)</option>
+                            <option value="MXN" data-flag="mx">Peso Mexicano (MXN)</option>
+                            <option value="SAR" data-flag="sa">Riyal Saudí (SAR)</option>
+                            <option value="ARS" data-flag="ar">Peso Argentino (ARS)</option>
+                            <option value="PEN" data-flag="pe">Nuevo Sol Peruano (PEN)</option>
+                            <option value="BOB" data-flag="bo">Boliviano (BOB)</option>
+                            <option value="UYU" data-flag="uy">Peso Uruguayo (UYU)</option>
+                            <option value="PYG" data-flag="py">Guaraní Paraguayo (PYG)</option>
+                            <option value="CLP" data-flag="cl">Peso Chileno (CLP)</option>
+                            <option value="RUB" data-flag="ru">Rublo Ruso (RUB)</option>
+                        </select>
+                    </div>
+                    <input type="number" id="amount" placeholder="0.00" class="input-field">
+                </div>
+                <div class="currency-input">
+                    <label for="to_currency">A</label>
+                    <div class="select-wrapper">
+                        <select id="to_currency">
+                            <option value="USD" data-flag="us">Dólar Estadounidense (USD)</option>
+                            <option value="EUR" data-flag="eu">Euro (EUR)</option>
+                            <option value="GBP" data-flag="gb">Libra Esterlina (GBP)</option>
+                            <option value="CNY" data-flag="cn">Yuan Chino (CNY)</option>
+                            <option value="JPY" data-flag="jp">Yen Japonés (JPY)</option>
+                            <option value="CAD" data-flag="ca">Dólar Canadiense (CAD)</option>
+                            <option value="AUD" data-flag="au">Dólar Australiano (AUD)</option>
+                            <option value="NZD" data-flag="nz">Dólar Neozelandés (NZD)</option>
+                            <option value="BRL" data-flag="br">Real Brasileño (BRL)</option>
+                            <option value="MXN" data-flag="mx">Peso Mexicano (MXN)</option>
+                            <option value="SAR" data-flag="sa">Riyal Saudí (SAR)</option>
+                            <option value="ARS" data-flag="ar" selected>Peso Argentino (ARS)</option>
+                            <option value="PEN" data-flag="pe">Nuevo Sol Peruano (PEN)</option>
+                            <option value="BOB" data-flag="bo">Boliviano (BOB)</option>
+                            <option value="UYU" data-flag="uy">Peso Uruguayo (UYU)</option>
+                            <option value="PYG" data-flag="py">Guaraní Paraguayo (PYG)</option>
+                            <option value="CLP" data-flag="cl">Peso Chileno (CLP)</option>
+                            <option value="RUB" data-flag="ru">Rublo Ruso (RUB)</option>
+                        </select>
+                    </div>
+                    <input type="text" id="converted_amount" placeholder="0.00" readonly class="input-field">
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="small-containers">
+
+            <div class="projects-container">
+                <h2 class="projects-title">Mis Otros Proyectos</h2>
+            </div>
+
+            <a href="https://ian9franco.github.io/tormentica/#/current-location" target="_blank" class="small-container" id="small-container-1">
+                <video muted autoplay loop disablepictureinpicture>
+                    <source src="img/proyectos/tormentica.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </a>
+            <a href="https://ian9franco.github.io/tormentica/#/current-location" target="_blank" class="small-container" id="small-container-2">
+                <video muted autoplay loop disablepictureinpicture>
+                    <source src="img/proyectos/calculadora.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>Creado por Ian Pontorno &copy; 2023</p>
+        <a href="https://ian9franco.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-briefcase"></i>
+        </a>
+    </footer>
+    <script>
+        if (window.location.hostname === 'localhost') {
+            const script = document.createElement('script');
+            script.src = 'backend/script.js';
+            document.body.appendChild(script);
+        } else {
+            const script = document.createElement('script');
+            script.src = 'backend/backup.js';
+            document.body.appendChild(script);
+        }
+    </script>
+    <script src="frontend/js/styles.js"></script>
+</body>
+</html>
