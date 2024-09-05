@@ -36,7 +36,9 @@ body {
     display: flex;
     flex-direction: column;
     transition: background-color 0.3s ease;
+    flex-direction: column;
 }
+
 
 #animated-background {
     position: fixed;
@@ -168,6 +170,29 @@ body {
     object-fit: cover;
 }
 
+/* Estilos para el párrafo con el ID "titulos" */
+#titulos {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color); /* Asegúrate de definir esta variable en tu CSS */
+    font-size: 1rem; /* Tamaño de fuente ajustable según tus necesidades */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 10px; /* Agrega un poco de espacio alrededor del texto */
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para contraste */
+    border-radius: 5px; /* Bordes redondeados para un mejor estilo */
+    text-align: center; /* Alinea el texto al centro */
+    position: absolute; /* Posiciona el título sobre el video */
+    bottom: 10px; /* Posiciona el título a 10px desde la parte inferior del contenedor */
+    left: 50%; /* Centra el título horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición horizontalmente para centrarlo */
+    width: calc(100% - 20px); /* Ancho del título menos el padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+.small-container {
+    position: relative; /* Necesario para que el título se posicione correctamente */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
 .theme-toggle {
     position: absolute;
     top: 20px;
@@ -289,6 +314,7 @@ body {
 .input-field {
     font-weight: bold;
 }
+
 
 footer {
     margin-top: auto;
